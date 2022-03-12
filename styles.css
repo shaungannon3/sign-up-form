@@ -1,0 +1,150 @@
+@font-face {
+    font-family: coolFont;
+    src: url(Norse-Bold.otf);
+  }
+
+:root{
+    --text-color: rgb(172, 172, 179);
+    --accent-color: rgb(255, 140, 0);
+    --text-font: 'Poppins', sans-serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+}
+
+.left{
+    width: 40vw;
+    background-image: url('mountain.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.left-image-container{
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#odin-image-text{
+    margin: 0;
+    font-family: coolFont;
+    font-size: 5rem;
+    color: var(--accent-color);
+}
+
+#odin-image{
+    width: 100px;
+    height: auto;
+}
+
+.right{
+    width: 60vw;
+    padding: 0 5vw;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    background-color: black;
+    font-size: 1.5rem;
+}
+
+.right-text-container{
+    padding: 10vh 0 5vh 0;
+    font-size: 1.5rem;
+}
+
+#right-text-float{
+    padding-top: 5vh;
+}
+
+form ul{
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+form li{
+    width: 50%;
+    padding-top: 1vh;
+}
+
+label, input{
+    display: block;
+}
+
+label{
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    opacity: .75;
+}
+
+input{
+    background-color: black;
+    width: 80%;
+    border-radius: 3px;
+    border: 0.5px solid var(--text-color);
+    font-size: 1.2rem;
+    color: var(--text-color);
+    outline: none;
+}
+
+input:focus, input:active{
+    border-color: var(--accent-color);
+}
+
+.create-account-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-color: var(--accent-color);
+    background-color: black;
+    color: var(--accent-color);
+    border-radius: 3px;
+}
+
+a:active, a:focus, button:active, button:focus{
+    outline: auto;
+    outline-color: var(--text-color);
+}
+
+
+a{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.error{
+    border: 0.5px solid red;
+}
+
+/* This is the style of our error messages */
+.pw-error {
+    font-size: 0.6rem;
+    height: 0.6rem;
+    width : 100%;
+    padding: 0;
+    color: red;
+    background-color: black;  
+  }
+  
